@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+class Car {
+public:
+    string brand;
+    int year;
+
+    // Constructor declaration
+    Car();
+
+    // Destructor declaration
+    ~Car();
+
+    // Function declaration
+    void displayInfo();
+};
+
+// Constructor definition using scope resolution
+Car::Car() {
+    brand = "Unknown";
+    year = 0;
+    cout << "Constructor called: Car object created." << endl;
+}
+
+// Destructor definition using scope resolution
+Car::~Car() {
+    cout << "Destructor called: Car object destroyed." << endl;
+}
+
+// Function definition using scope resolution
+void Car::displayInfo() {
+    cout << "Brand: " << brand << endl;
+    cout << "Year: " << year << endl;
+}
+
+int main() {
+    Car myCar;
+
+    cout << "Enter car brand: ";
+    cin >> myCar.brand;
+    cout << "Enter manufacturing year: ";
+    cin >> myCar.year;
+
+    cout << "\nCar Details:" << endl;
+    myCar.displayInfo();
+
+    return 0;
+}
+
+
+
+
