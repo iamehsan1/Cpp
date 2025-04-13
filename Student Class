@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+class student{
+  public:
+  string name;
+  int id;
+  int age;
+  
+  
+  //constructer
+  student() {
+    name="ali";
+    age=18;
+    id=876;
+  }
+    //inputDetail
+    void inputDetail() {
+      cout<<"student name:";
+      cin>>name;
+      cout<<"student id:";
+      cin>>id;
+      cout<<"student age:";
+      cin>>age;
+    }
+    
+    void showDetail(){
+       cout<<"Name\n"<<name;
+       cout<<"id\n"<<id;
+          cout<<"age\n"<<age;
+    }
+    
+  
+  
+};
+
+
+int main() 
+{
+  student S1,S2;
+  cout<<"enter detail for student "<<endl;
+  S1.inputDetail();
+   cout<<"enter detail for student"<<endl;
+  S2.inputDetail();
+   cout<<"show detail for student "<<endl;
+  S1.showDetail();
+   cout<<"show detail for student "<<endl;
+  S2.showDetail();
+  
+    return 0;
+}
+
+
+
