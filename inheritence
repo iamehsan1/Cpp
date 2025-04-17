@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+class human{
+	public:
+		string name;
+		int age;
+		string gender;
+		int rollno;
+		float gpa;
+		void getinfo()
+		{
+			cout<<"enter name:"<<endl;
+			cin>>name;
+			cout<<"enter age:"<<endl;
+			cin>>age;
+			cout<<"enter gender:"<<endl;
+			cin>>gender;
+		}
+};
+class student:public human
+{
+public:
+	void getdetail() {
+		cout<<"enter gpa:"<<endl;
+			cin>>gpa;
+			cout<<"enter rollno:"<<endl;
+			cin>>rollno;
+		}
+			void display(){
+				cout<<"yours detail are:"<<endl;
+				cout<<name<<" "<<age<<" "<<rollno<<" "<<gpa<<" "<<gender;
+			}
+		};
+			int main()
+			{
+				class student s1,s2;
+				s1.getinfo();
+				s1.getdetail();
+				s1.display();
+				cout<<"the data of second\n";
+				s2.getinfo();
+				s2.getdetail();
+				s2.display();
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
